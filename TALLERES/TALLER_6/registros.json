@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "jhoniel",
+        "email": "jhonielsmith813@gmail.com",
+        "fecha_nacimiento": "2004-02-16",
+        "sitio_web": "https:\/\/www.google.com\/",
+        "genero": "masculino",
+        "intereses": [
+            "deportes",
+            "musica"
+        ],
+        "comentarios": "jhgjgjhg",
+        "edad": 20,
+        "foto_perfil": "uploads\/minion inteligente.jpg"
+    },
+    {
+        "nombre": "smith",
+        "email": "jhonielsmith8135@gmail.com",
+        "fecha_nacimiento": "2006-01-22",
+        "sitio_web": "https:\/\/www.google.com\/",
+        "genero": "masculino",
+        "intereses": [
+            "deportes",
+            "musica"
+        ],
+        "comentarios": "5yty",
+        "edad": 18,
+        "foto_perfil": "uploads\/Imagen1.png"
+    },
+    {
+        "nombre": "gfgd",
+        "email": "jhonielsmith813fdf5@gmail.com",
+        "fecha_nacimiento": "2005-11-10",
+        "sitio_web": "https:\/\/www.google.com\/",
+        "genero": "femenino",
+        "intereses": [
+            "deportes",
+            "musica"
+        ],
+        "comentarios": "5ytygfd",
+        "edad": 18,
+        "foto_perfil": "uploads\/IMG_20191222_133930.jpg"
+    }
+]

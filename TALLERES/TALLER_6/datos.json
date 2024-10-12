@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "jhoniel",
+        "email": "jhonielsmith813@gmail.com",
+        "fecha_nacimiento": "2004-02-16",
+        "sitio_web": "https:\/\/www.google.com\/",
+        "genero": "masculino",
+        "intereses": [
+            "deportes",
+            "musica"
+        ],
+        "comentarios": "jhgjgjhg",
+        "edad": 20,
+        "foto_perfil": "uploads\/minion inteligente.jpg"
+    }
+]

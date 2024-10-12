@@ -7,11 +7,23 @@ function validarEmail($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function validarEdad($edad) {
+function validarFecha_nacimiento($fechaNacimiento) {
+    $fechaActual = new DateTime();
+    $fechaNacimiento = new DateTime($fechaNacimiento);
+    $edad = $fechaActual->diff($fechaNacimiento)->y;
     return is_numeric($edad) && $edad >= 18 && $edad <= 120;
 }
+function calcularEdad($fechaNacimiento) {
+    $fecha = DateTime::createFromFormat('Y-m-d', $fechaNacimiento);
+    if ($fecha) {
+        $hoy = new DateTime();
+        $edad = $hoy->diff($fecha)->y; // Obtiene solo la parte de años
+        return $edad;
+    }
+    return null; // Devuelve null si la fecha no es válida
+}
 
-function validarSitioWeb($sitioWeb) {
+function validarSitio_web($sitioWeb) {
     return empty($sitioWeb) || filter_var($sitioWeb, FILTER_VALIDATE_URL);
 }
 
@@ -22,7 +34,7 @@ function validarGenero($genero) {
 
 function validarIntereses($intereses) {
     $interesesValidos = ['deportes', 'musica', 'lectura'];
-    return !empty($intereses) && count(array_intersect($intereses, $interesesValidos)) === count($intereses);
+    return empty($intereses) || count(array_intersect($intereses, $interesesValidos)) === count($intereses);
 }
 
 function validarComentarios($comentarios) {
@@ -46,5 +58,10 @@ function validarFotoPerfil($archivo) {
     }
 
     return true;
+}
+
+function validarNombreUnico($nombreArchivo) {
+    $rutaDestino = 'uploads/' . basename($nombreArchivo);
+    return !file_exists($rutaDestino);
 }
 ?>
