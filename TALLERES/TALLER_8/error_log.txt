@@ -1,0 +1,2 @@
+[2024-10-18 15:46:40] ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'nuevo@example.com' for key 'usuarios.email'
+[2024-10-18 15:46:44] ERROR: Duplicate entry 'nuevo@example.com' for key 'usuarios.email'
